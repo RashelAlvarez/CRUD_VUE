@@ -96,7 +96,7 @@ export default {
     },
       obtenerContacto() {
       axios
-        .get("http://127.0.0.1:8000/api/contacto")
+        .get("https://apirestlaravel-production.up.railway.app/api/contacto")
         .then((response) => {
           this.contactos = response.data;
           this.cantcontact = this.contactos.length;
